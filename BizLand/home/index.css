@@ -1,0 +1,694 @@
+            /* CSS reset */
+            
+            * {
+                /* "*" this is called universal operator */
+                margin: 0px;
+                padding: 0px;
+                /* box-sizing:box sizeing is aproperty allow us to include the padding and border in an element's total width and height  */
+                box-sizing: border-box;
+                /* background: rgb(238, 238, 238); */
+            }
+            /************* whole navbar *****************/
+            
+            .navbar {
+                /* display: none; */
+                z-index: 10;
+                position: fixed;
+                top: 0px;
+                left: 0px;
+                right: 0px;
+                width: 100%;
+                height: 100px;
+                box-sizing: border-box;
+                box-shadow: 5px 5px 10px 10px rgba(0, 0, 0, .5);
+            }
+            
+            .topnavbar {
+                justify-content: space-between;
+                height: 70px;
+                display: flex;
+                align-items: center;
+                background: rgb(238, 236, 236);
+            }
+            
+            .other {
+                margin: 0px 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+            }
+            
+            .i {
+                padding: 0px 10px;
+            }
+            
+            .other li {
+                list-style: none;
+            }
+            
+            .other input {
+                height: 40px;
+                width: 400px;
+                border: 3px solid blue;
+                border-radius: 5px;
+                font-size: 20px;
+                margin: 0px 5px;
+                padding: 0px 10px;
+                outline: none;
+            }
+            
+            .searchbox {
+                position: relative;
+            }
+            
+            .searchbox .input {
+                width: 0px;
+                border: 0;
+                height: 40px;
+                padding: 10px 10px;
+                margin: 0px 10px;
+                border-radius: 50px;
+                outline: none;
+                color: blue;
+                font-size: 20px;
+                font-weight: bold;
+                transition: all .5s linear;
+                box-sizing: border-box;
+            }
+            
+            .searchbtn {
+                position: absolute;
+                top: 0px;
+                right: -1px;
+                background: rgb(255, 255, 255);
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+                transition: all 0.5s .6s linear;
+                border-radius: 50%;
+                border: 3px solid blue;
+            }
+            
+            .searchbtn .fas {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: rgb(11, 35, 246);
+                font-size: 16px;
+                transition: all .5s .6s linear;
+            }
+            
+            .bg-green {
+                background: rgb(0, 47, 255);
+                transition: all .2s linear;
+            }
+            
+            .searchbtn .fas.color-white {
+                color: rgb(255, 255, 255);
+                transition: all .2s linear;
+            }
+            
+            .input.active-width {
+                width: 270px;
+            }
+            
+            .login {
+                background-color: rgb(37, 37, 243);
+                border: 3px solid rgb(37, 37, 243);
+                padding: 7px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                color: white;
+                font-family: 'Source Sans Pro', sans-serif;
+                margin: 5px;
+            }
+            
+            .login:hover {
+                background-color: white;
+                padding: 7px 20px;
+                text-decoration: none;
+                border-radius: 5px;
+                border: 3px solid blue;
+                color: blue;
+                font-family: 'Source Sans Pro', sans-serif;
+                margin: 0px 5px;
+            }
+            
+            .logo {
+                padding-left: 30px;
+                display: flex;
+                align-items: center;
+            }
+            
+            .downnavigation {
+                background-color: royalblue;
+                height: 43px;
+                border-top: 1px solid goldenrod;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            
+            .downnavigation li {
+                list-style: none;
+                padding: 20px 20px;
+            }
+            
+            .downnavigation li a {
+                color: rgb(255, 255, 255);
+                text-decoration: none;
+                text-transform: uppercase;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            /************************************* End of whole navbar **********************************/
+            
+            .Heading {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex-direction: row;
+                min-height: 110vh;
+            }
+            
+            .text-heading {
+                margin: 0px 30px;
+            }
+            
+            .text {
+                font-size: 20px;
+                margin: 20px 0px;
+                list-style: none;
+            }
+            
+            .head {
+                text-transform: uppercase;
+                font-size: 50px;
+                font-family: 'Raleway', sans-serif;
+                color: blue;
+            }
+            
+            .btn {
+                color: rgb(71, 71, 248);
+                text-decoration: none;
+                background-color: none;
+                border: 3px solid rgb(77, 77, 235);
+                border-radius: 5px;
+                padding: 5px 20px;
+                margin: 0px;
+                font-family: 'Source Sans Pro', sans-serif;
+            }
+            
+            .btn:hover {
+                color: white;
+                background-color: rgb(77, 77, 235);
+            }
+            
+            .Heading img {
+                width: 600px;
+            }
+            
+            .courses-heading {
+                width: 100%;
+                text-align: center;
+            }
+            
+            .courses-heading h1 {
+                font-size: 40px;
+                color: rgb(50, 117, 205);
+            }
+            
+            .courses-heading p {
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            
+            .all-courses {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                margin: 50px 0px;
+            }
+            
+            .all-courses div {
+                width: 330px;
+                word-spacing: 7px;
+                line-height: 24px;
+            }
+            
+            .all-courses div h1 {
+                font-size: 30px;
+                color: rgb(47, 93, 219);
+            }
+            
+            .all-courses div p {
+                color: rgb(63, 63, 63);
+                margin: 10px 0px 20px 0px;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            
+            .hr {
+                height: 5px;
+                width: 50px;
+                background: linear-gradient(90deg, blue, rgb(28, 241, 241));
+                border-radius: 40px;
+                margin: 10px 0px;
+            }
+            
+            .course-2 {
+                margin: 150px 0px;
+            }
+            
+            .subscribers {
+                width: 100%;
+                background: linear-gradient(113.45deg, #22D587 11.69%, #136FFB 122.47%);
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                min-height: 200px;
+                box-sizing: border-box;
+            }
+            
+            .subs {
+                font-size: 30px;
+                text-align: center;
+                width: 100%;
+                color: white;
+                margin: 50px 0px;
+            }
+            
+            .stickers {
+                width: 100%;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-evenly;
+                color: white;
+                text-align: center;
+                margin: 0px 0px 50px 0px;
+            }
+            
+            .left-stickers {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .right-stickers {
+                display: flex;
+                justify-content: space-evenly;
+            }
+            
+            .sticker::after {
+                content: "";
+                position: absolute;
+                background: rgb(10, 7, 7);
+            }
+            
+            .testimonial {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                text-align: center;
+                font-family: 'Cabin', sans-serif;
+                color: white;
+            }
+            
+            .testimonial::before {
+                content: '';
+                background: url(../img/experience.jpg) no-repeat center center/cover;
+                background-attachment: fixed;
+                position: absolute;
+                min-height: 500px;
+                width: 100%;
+                z-index: -1;
+                opacity: 1;
+                overflow: hidden;
+            }
+            
+            .header {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                font-family: 'Roboto Condensed', sans-serif;
+                text-shadow: 2px 2px 10px black;
+            }
+            
+            .header h1 {
+                font-size: 40px;
+                margin: 60px 0px 5px 0px;
+                text-shadow: 2px 2px 10px black;
+            }
+            
+            .header img {
+                margin: 30px 0px;
+            }
+            
+            .hr1 {
+                height: 5px;
+                width: 20%;
+                background: linear-gradient(90deg, blue, rgb(28, 241, 241));
+                border-radius: 40px;
+                margin: 10px 0px;
+            }
+            
+            .img1 {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+            }
+            
+            .greay {
+                color: rgb(243, 243, 243);
+                text-shadow: 2px 2px 10px black;
+                margin: 0px 50px;
+                text-shadow: 2px 2px 10px black;
+            }
+            
+            .name h3 {
+                color: rgb(240, 240, 240);
+                margin: 4px 0px 200px 0px;
+                text-shadow: 2px 2px 10px black;
+            }
+            /********************* Footer ************************/
+            /* Primery Fotter */
+            
+            .footer-contact {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                min-height: 200px;
+                background: #006AFF;
+                color: white;
+                margin: 50px 0px;
+            }
+            
+            .touch {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                flex-direction: column;
+                font-family: 'Cabin', sans-serif;
+            }
+            
+            .touch h1 {
+                font-size: 30px;
+                margin: 10px 0px;
+            }
+            
+            .btn2 {
+                margin: 25px 0px;
+            }
+            
+            .btn2 a {
+                margin: 5px 5px;
+                background-color: white;
+                border-radius: 5px;
+                padding: 10px 20px;
+                text-decoration: none;
+                border: 2px solid white;
+                color: #006AFF;
+            }
+            
+            .btn2 a:nth-child(2) {
+                background: none;
+                border: 2px solid white;
+                color: white;
+            }
+            
+            .btn2 a:nth-child(1):hover {
+                background: rgb(241, 241, 241);
+                border: 2px solid rgb(226, 225, 225);
+                color: #006AFF;
+            }
+            
+            .btn2 a:nth-child(2):hover {
+                background: rgb(241, 241, 241);
+                border: 2px solid rgb(226, 225, 225);
+                color: #006AFF;
+            }
+            /*** Main Footet ****/
+            
+            footer {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                width: 100%;
+            }
+            
+            .main-footer {
+                color: white;
+                display: flex;
+                background: rgb(51, 51, 51);
+                width: 100%;
+            }
+            
+            .left-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+            
+            .intro {
+                display: block;
+                width: 275px;
+                margin: 50px 0px 0px 0px;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            
+            .h4-tag {
+                color: rgb(165, 165, 165);
+                margin: 30px 0px;
+            }
+            
+            .addres {
+                color: rgb(199, 199, 199);
+            }
+            
+            .other-link {
+                grid-area: other-link;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            
+            .other-link h1 {
+                font-size: 25px;
+            }
+            
+            .other-link li {
+                list-style: none;
+                margin: 5px;
+            }
+            
+            .other-link li a {
+                text-decoration: none;
+                color: rgb(230, 230, 230);
+            }
+            
+            .footer-box {
+                width: 100%;
+                background: rgb(26, 26, 26);
+            }
+            
+            .footer-box h1 {
+                color: rgb(158, 156, 156);
+                text-align: center;
+                padding: 10px 0px;
+            }
+            
+            .right-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                width: 100%;
+            }
+            
+            .subscribe {
+                grid-area: subscribe;
+                color: white;
+                font-family: 'Roboto Condensed', sans-serif;
+            }
+            
+            .subscribe h1 {
+                font-size: 25px;
+            }
+            
+            .subscribe .inbox {
+                margin: 20px 0px;
+            }
+            
+            .subscribe .inbox img {
+                margin: 0px 10px;
+            }
+            
+            .subscribe div input {
+                border: 2px solid white;
+                outline: none;
+                padding: 10px 30px;
+                height: 40px;
+                width: 300px;
+                border-radius: 40px;
+                color: black;
+                font-size: 15px;
+            }
+            
+            .subscribe div button {
+                position: relative;
+                right: 33px;
+                top: 3px;
+                background: none;
+                border: none;
+                outline: none;
+            }
+            
+            .subscribe div button i {
+                color: rgb(146, 145, 145);
+                font-size: 20px;
+            }
+            
+            .subscribe div button i:hover {
+                color: rgb(0, 247, 255);
+            }
+            
+            .inbox {
+                display: flex;
+                flex-direction: row;
+            }
+            
+            .social-media {
+                display: flex;
+                flex-direction: column;
+                margin: 80px 0px 0px 0px;
+            }
+            
+            .social-media a {
+                margin: 5px;
+            }
+            
+            .social-media a i {
+                color: white;
+                border: 2px solid white;
+                border-radius: 50%;
+                padding: 10px 10px 10px 9px;
+                font-size: 25px;
+            }
+            
+            .media1:hover {
+                color: rgb(66, 66, 255);
+                border: 2px solid rgb(66, 66, 255);
+            }
+            
+            .media2:hover {
+                color: rgb(253, 72, 112);
+                border: 2px solid rgb(251, 73, 112);
+            }
+            
+            .media3:hover {
+                color: rgb(255, 0, 221);
+                border: 2px solid rgb(255, 0, 221);
+            }
+            
+            .media4:hover {
+                color: rgb(79, 79, 255);
+                border: 2px solid rgb(79, 79, 255);
+            }
+            
+            .media5:hover {
+                color: rgb(66, 66, 255);
+                border: 2px solid rgb(66, 66, 255);
+            }
+            
+            @media only screen and (max-width: 1100px) {
+                .Heading {
+                    flex-direction: column;
+                    text-align: center;
+                }
+                .Heading img {
+                    width: 700px;
+                }
+                /* .all-courses div {
+                    width: 400px;
+                } */
+            }
+            
+            @media only screen and (max-width: 900px) {
+                .header h1 {
+                    margin: 100px 0px 5px 0px;
+                }
+                .main-footer {
+                    flex-direction: column;
+                }
+                .Heading img {
+                    width: 670px;
+                }
+                .all-courses div {
+                    width: 100%;
+                    box-shadow: 2px 2px 5px 1px rgb(196, 196, 196);
+                    text-align: center;
+                    margin: 40px 10px;
+                    min-height: 300px;
+                    padding-top: 20px;
+                    border-radius: 20px;
+                }
+            }
+            
+            @media only screen and (max-width: 700px) {
+                .Heading img {
+                    width: 85%;
+                }
+                .header h1 {
+                    margin: 150px 0px 5px 0px;
+                }
+                .all-courses {
+                    flex-direction: column;
+                }
+                .all-courses div {
+                    width: 80%;
+                    box-shadow: 2px 2px 5px 1px rgb(196, 196, 196);
+                    text-align: center;
+                    margin: 40px 0px;
+                    min-height: 285px;
+                    padding-top: 20px;
+                    border-radius: 20px;
+                }
+                .footer-box {
+                    font-size: 11px;
+                }
+                .testimonial::before {
+                    min-height: 700px;
+                }
+            }
+            
+            @media only screen and (max-width: 500px) {
+                .left-area {
+                    flex-direction: column;
+                    margin-bottom: 50px;
+                }
+                .left-area div {
+                    margin: 20px 0px;
+                }
+                .other-link {
+                    margin: 0px 20px;
+                    text-align: left;
+                }
+                .right-area {
+                    flex-direction: column;
+                }
+                .social-media {
+                    flex-direction: row;
+                    margin: 20px 0px 0px 0px;
+                }
+                .left-stickers {
+                    flex-direction: column;
+                }
+                .right-stickers {
+                    flex-direction: column;
+                }
+            }

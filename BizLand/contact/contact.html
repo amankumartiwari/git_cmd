@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Contact us Form | CodingNepal</title>
+
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+
+    <!-- script -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/7fe4429f67.js" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="../contact/contact.css">
+
+</head>
+
+<body>
+    <section class="contact">
+        <div class="header">
+            <h1>Contact</h1>
+        </div>
+        <div class="container">
+            <div class="box">
+
+                <div class="formAndComents">
+
+                    <div class="contactForm">
+                        <form action="#">
+                            <div class="form-row">
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label for=""> First Name<span class="requrie">*</span></label>
+                                </div>
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label for=""> Last Name<span class="requrie">*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-data">
+                                    <input type="email" required>
+                                    <div class="underline"></div>
+
+                                    <label for=""> Email Adress<span class="requrie">*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label for=""> State <span class="requrie">*</span></label>
+                                </div>
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label for=""> City <span class="requrie">*</span></label>
+                                </div>
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+                                    <label for=""> Pin<span class="requrie">*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+
+                                    <label for=""> Adress<span class="requrie">*</span></label>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="input-data">
+                                    <input type="text" required>
+                                    <div class="underline"></div>
+
+                                    <label for=""> Mobil Number<span class="requrie">*</span></label>
+                                </div>
+                                <div class="input-data selection ">
+                                    <label for="">Gender <span class="requrie">*</span></label>
+                                    <select name="sources" id="sources" class="custom-select sources" placeholder="Source Type">
+                                        <option value="profile">Male</option>
+                                        <option value="word">Female</option>
+                                        <option value="hashtag">Other</option>
+                                      </select>
+                                </div>
+
+                            </div>
+                            <div class="form-row">
+                                <div class="input-data textarea" required>
+                                    <textarea cols="30" rows="10" required></textarea>
+                                    <div class="underline"></div>
+
+                                    <label for="">Write Your Message<span class="requrie">*</span></label>
+                                </div>
+                            </div>
+
+                            <div class="form-row ">
+                                <button class="submit-btn" type="submit">Send a Message</button>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="coments">
+                        <div class="subComents">
+                            <div id="slideshow">
+                                <div>
+                                    <div class="person">
+                                        <img src="../img/background.jpg" alt="" class="personImg">
+                                        <h2>Ravikant</h2>
+                                        <p>
+                                            Lorem ipsum dolor sit, amet consectetur adab, nemo soluta veniam culpa consectetur ducimus unde quidem doloremque.
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="person">
+                                        <img src="../img/img2.jpg" alt="" class="personImg">
+                                        <h2> Vishal</h2>
+                                        <p>
+                                            Error perferendis aliquam blanditiis, consequuntur debitis ducimus possimus corrupti. Nulla velit numquam ab, nemo soluta veniam culpa consectetur ducimus unde quidem doloremque.
+                                        </p>
+                                    </div>
+
+                                </div>
+                                <div>
+                                    <div class="person">
+                                        <img src="../img/img4.jpg" alt="" class="personImg">
+                                        <h2>Vikrant</h2>
+                                        <p>
+                                            consectetur adipisicing elit. Error perferendis aliquam blanditiis, consequuntur debitis ducimus possimus corrupti. Nulla velit numquam ab, nemo soluta veniam culpa consectetur ducimus unde quidem doloremque.
+                                        </p>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="hr"></div>
+                <div class="location">
+                    <div class="mapImg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30144.153791479534!2d77.02241524040387!3d28.624536052973255!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d053bc9b2042d%3A0xedd0db630949c88e!2sMohan%20Garden%2C%20New%20Delhi%2C%20Delhi%20110059!5e0!3m2!1sen!2sin!4v1601646981976!5m2!1sen!2sin"
+                            width="300px" height="200px" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe> </div>
+                    <div class="adress">
+                        <h3>World Finance India</h3>
+                        <p>Mohan Garden</p>
+                        <p>Uttam Nagar</p>
+                        <p>New Delhi - 110059</p>
+
+                        <div class="phone">
+                            <div class="subPhone">
+                                <h3> Phone : </h3>
+                                <p> (+91) 9650511478 , 8744883594</p>
+                            </div>
+                            <div class="subPhone">
+                                <h3> Email : </h3>
+                                <p> tiwariravikant04@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </section>
+    <script>
+        $("#slideshow > div:gt(0)").hide();
+
+        setInterval(function() {
+            $('#slideshow > div:first')
+                .fadeOut(1)
+                .next()
+                .fadeIn(1000)
+                .end()
+                .appendTo('#slideshow');
+        }, 3000);
+    </script>
+
+
+</body>
+
+</html>

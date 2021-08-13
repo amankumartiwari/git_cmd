@@ -1,0 +1,341 @@
+body {
+    background: linear-gradient(113.45deg, rgb(180, 233, 247), rgb(176, 222, 255));
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0px;
+    padding: 0px;
+}
+
+
+/* Whole Top Navbar */
+
+.topnavbar {
+    justify-content: space-between;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background: rgb(238, 236, 236);
+    z-index: 10;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    box-shadow: 2px 2px 5px 2px rgb(231, 231, 231);
+}
+
+.other {
+    margin: 0px 0px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.i {
+    padding: 0px 10px;
+}
+
+.other li {
+    list-style: none;
+}
+
+.other input {
+    height: 40px;
+    width: 400px;
+    border: 3px solid blue;
+    border-radius: 5px;
+    font-size: 20px;
+    margin: 0px 5px;
+    padding: 0px 10px;
+    outline: none;
+}
+
+.searchbox {
+    position: relative;
+}
+
+.searchbox .input {
+    width: 0px;
+    border: 0;
+    height: 40px;
+    padding: 10px 10px;
+    margin: 0px 10px;
+    border-radius: 50px;
+    outline: none;
+    color: blue;
+    font-size: 20px;
+    font-weight: bold;
+    transition: all .5s linear;
+    box-sizing: border-box;
+}
+
+.searchbtn {
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    background: rgb(255, 255, 255);
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.5s .6s linear;
+    border-radius: 50%;
+    border: 3px solid blue;
+}
+
+.searchbtn .fas {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(11, 35, 246);
+    font-size: 16px;
+    transition: all .5s .6s linear;
+}
+
+.bg-green {
+    background: rgb(0, 47, 255);
+    transition: all .2s linear;
+}
+
+.searchbtn .fas.color-white {
+    color: rgb(255, 255, 255);
+    transition: all .2s linear;
+}
+
+.input.active-width {
+    width: 270px;
+}
+
+.login {
+    background-color: rgb(37, 37, 243);
+    border: 3px solid rgb(37, 37, 243);
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 5px;
+}
+
+.login:hover {
+    background-color: white;
+    padding: 7px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 3px solid blue;
+    color: blue;
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0px 5px;
+}
+
+.downnavigation {
+    background-color: royalblue;
+    border-top: 1px solid goldenrod;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.logo {
+    padding-left: 30px;
+    color: royalblue;
+    display: flex;
+    align-items: center;
+    height: 70px;
+}
+
+#LOGO-1 {
+    font-size: 20px;
+}
+
+#LOGO-2 {
+    font-size: 40px;
+    font-family: 'Francois One', sans-serif;
+}
+
+#LOGO-3 {
+    font-size: 20px;
+}
+
+#LOGO-4 {
+    color: rgb(0, 225, 255);
+    font-size: 30px;
+    font-family: 'Francois One', sans-serif;
+}
+
+
+/* End of Top Navbar */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 180px;
+    margin-bottom: 50px;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    background-color: white;
+    height: auto;
+    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 650px;
+    margin: 0px 10px;
+}
+
+#photo {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('../img/profile.jpg') no-repeat center center/cover;
+    margin-top: -77px;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-sizing: border-box;
+}
+
+.heading {
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: rgb(53, 53, 53);
+    margin: 0px 10px;
+}
+
+.btn button {
+    border: none;
+    padding: 10px 100px;
+    font-size: 20px;
+    background: linear-gradient(113.45deg, rgb(15, 187, 230), rgb(59, 137, 193));
+    border-radius: 4px;
+    width: 100%;
+    font-family: 'Roboto Condensed', sans-serif;
+    outline: none;
+    color: white;
+}
+
+.btn button:hover {
+    background: linear-gradient(113.45deg, rgb(25, 199, 243), rgb(75, 166, 231));
+    color: white;
+}
+
+.para {
+    color: rgb(53, 53, 53);
+    padding: 50px 50px;
+    padding-top: 20px;
+    text-align: start;
+    font-weight: inherit;
+    font-size: 18px;
+    word-spacing: 5px;
+    line-height: 34px;
+}
+
+@media(max-width:560px) {
+    .heading {
+        font-size: 18px;
+    }
+    .para {
+        padding: 35px 30px;
+        word-spacing: 5px;
+        line-height: 25px;
+    }
+    .btn button {
+        padding: 10px 60px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:400px) and (min-width: 0px) {
+    .heading {
+        font-size: .8rem;
+    }
+    .para {
+        padding: 35px 25px;
+        word-spacing: 5px;
+        line-height: 25px;
+    }
+    .btn button {
+        padding: 10px 40px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:300px) {
+    .heading {
+        font-size: .8rem;
+    }
+    .box {
+        width: 95%;
+    }
+    .para {
+        padding: 35px 30px;
+        word-spacing: 5px;
+        line-height: 25px;
+    }
+    .btn button {
+        padding: 10px 30px;
+        font-size: 14px;
+    }
+}
+
+@media(max-width:200px) and (min-width: 0px) {
+    .heading {
+        font-size: 100%;
+    }
+    .box {
+        width: 95%;
+    }
+    .para {
+        padding: 20px 30px;
+    }
+    .btn button {
+        width: 40%;
+        font-size: 10px;
+    }
+    html {
+        width: 108%;
+    }
+}
+
+#w-btn {
+    position: relative;
+    display: inline-block;
+    padding: 12px 36px;
+    margin: 10px 20px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 2px;
+    border-radius: 40px;
+    background: linear-gradient(90deg, rgb(25 199 243), rgb(15 187 230));
+    overflow: hidden;
+}
+
+span {
+    position: absolute;
+    background: white;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    border-radius: 50%;
+    animation: animate 1s linear infinite;
+}
+
+@keyframes animate {
+    0% {
+        width: 0px;
+        height: 0px;
+        opacity: 0.1;
+    }
+    100% {
+        width: 500px;
+        height: 500px;
+        opacity: 0.2;
+    }
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Finance & Stock Market full Course</title>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../mentor/mentor.css">
+    <!-- font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Staatliches&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;700;900&family=Roboto+Condensed:ital@0;1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital@1&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fe4429f67.js" crossorigin="anonymous"></script>
+
+</head>
+<style>
+
+</style>
+
+<body>
+
+    <!-- 
+    <div class="topnavbar">
+        <div class="logo">
+            <P id="LOGO-1">WORLD</P>
+            <P id="LOGO-2">FINANCE</P>
+            <P id="LOGO-3">INDIA</P>
+            <p id="LOGO-4">.</p>
+        </div>
+        <div class="other">
+            <div class="wrapper">
+                <div class="searchbox">
+                    <input type="text" class="input">
+                    <div class="searchbtn">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+            </div>
+            <li title="Login to your Account"> <a class="login" href="../login/login.html">Login</a></li>
+            <li> <a class="login" href="#">Contact Us Now</a></li>
+        </div>
+    </div> -->
+
+
+    <div class="container">
+        <div class="box">
+            <div id="photo">
+
+            </div>
+            <div class="heading">
+                <h2>SUNIL KUMAR TIWARI - TRADING COACH
+                    <p> Public Speaker, Life Coach, and Small Business Owner in Mumbai, India</p>
+                </h2>
+            </div>
+            <div class="btn">
+                <button id="w-btn"> visite My Company Website</button>
+            </div>
+            <div class="para">
+                <p>Mr Yogeshwar Vashishtha is a Civil Engineer who did his M.Tech. from IIT Roorkee and then worked outside India for many years on various hydropower projects of Skanska. He developed an interest in trading and investing after coming in
+                    contact with his Swedish Mentor who used to teach him by live trading the markets. He subsequently got professional training in India and abroad and bacame a full time trader in 2007. He started mentoring from 2010 and since then more
+                    than 5000 students have been trained in his online and physical six month mentoring program with live trading. He is the owner of Pathfinders Trainings. Pathfinders Trainings specializes in helping you become a professional trader
+                    and investor by learning how to trade the Indian stock, commodity and Forex markets on your own strength by learning and practicing fundammental analysis, technical analysis, risk management and psychology of trading. You will be trained
+                    how to, <br> 1. Create daily money by intraday trading <br> 2. Catch market moves by swing trading
+                    <br> 3. Build your long term wealth by portfolio management <br> 4. Trade stocks,futures,options,commodity & forex In Pathfinders Trainings we believe that to make money in stock market you have to know that: <br> 1. It is based on
+                    difference of opinion of two people so you cannot be right all the time. Its just increasing your probabilities by developing the necessary skills.
+                    <br> 2. It is a bidirectional market and you have to learn the derivatives like futures and options to take advantage of both directions. <br> 3. In stock market you have to overcome the time risk, skill risk, direction risk, and leverage
+                    risk to make money. <br> 4. Nobody takes guarantees in this market so you have to take control in your own hand. When you work so hard to earn the money, why not work hard to make it grow. Most big traders in the world are unanimous
+                    in their view that, if properly trained, stock market trading is one of the most rewarding professions and can be practiced by everybody by learning fundamental analysis, technical analysis, money management and risk management. Pathfinders
+                    Trainings has trained thousands of students in the last 10 years to trade and invest in the markets. This a is the time when you acquire the skill of trading and investing and take control of your savings in your own hand.</p>
+                <p> For details call 9022330009 or visit www.pathfinderstrainings.com</p>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(document).ready(function() {
+            $(".searchbtn").click(function() {
+                $(this).toggleClass("bg-green");
+                $(".fas").toggleClass("color-white");
+                $(".input").focus().toggleClass("active-width").val("");
+            });
+        });
+    </script>
+
+    <script type="text/javascript">
+        const Button = document.querySelector("#w-btn")
+        Button.forEach(btn => {
+            btn.addEventListener('click', function(e) {
+
+                let x = e.clientX - e.target.offsetLeft;
+                let y = e.clientY - e.target.offsetTop;
+
+                let ripples = document.createElement('span');
+                ripples.style.left = x + 'px'
+                ripples.style.top = y + 'px'
+                this.appendChild(ripples);
+                setTimeout(() => {
+                    ripples.remove()
+
+                }, 1000)
+            })
+        })
+    </script>
+</body>
+
+</html>
